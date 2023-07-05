@@ -1,0 +1,106 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: ubuntu;
+    src: url('/assets/fonts/Ubuntu-Bold.ttf') format('ubunBold'),
+        url('/assests/fonts/Ubunto-BoldItalic.tff') format('ubunItal');
+}
+
+@font-face {
+    font-family: kanit;
+    src: url('/assets/fonts/Kanit-Medium.ttf') format('kanMed'),
+        url('/assets/fonts/Kanit-MediumItalic.ttf') format('kanItal'),
+        url('/assets/fonts/Kanit-Regular.ttf') format('kanit');
+}
+
+@layer base
+{   
+    @media (max-width: 767px) {
+        .hidden-mobile {
+          display: none;
+        }
+    }
+
+    html 
+    {
+        @apply scrollbar-hide;        
+
+        overflow-x: hidden;
+        scroll-padding-top: 12vh;
+        scroll-snap-type: y mandatory;
+    }
+
+    header
+    {
+
+        height: 12vh;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+
+    }
+
+    section 
+    {
+        @apply border-b-2 gap-0;
+        
+        border: none;
+        height: 100vh;
+        scroll-snap-align: start;
+
+        margin-top: 0px;
+        margin-bottom: 0px;
+        overflow:hidden;
+
+        border-width: 0px;
+    }
+
+    img 
+    {
+        border-width: 0px;
+    }
+
+    /* Contact form */
+   
+    form
+    {
+        display: flex;
+
+        flex-direction: column;
+        justify-content: center;
+
+        font-family: sans-serif;
+        font-weight: bold;
+    }
+
+    input
+    {
+        padding: 5px 0;
+        margin: 10px 0;
+
+        border: #9AACB8 2px solid; 
+        border-radius: .5rem;
+    }
+
+    textarea
+    {
+        font-family: sans-serif;
+        font-weight: bold;
+
+        border: #9AACB8 2px solid; 
+        border-radius: .5rem;
+    }
+
+    button 
+    {
+        font-family: sans-serif;
+        font-weight: bold;
+        border-radius: .5rem;
+
+        padding: 10px 15px;
+        margin: 20px 0; 
+    } 
+
+}
