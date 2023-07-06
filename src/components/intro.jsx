@@ -9,12 +9,13 @@ const Intro = () => {
 
     return (  
 
+        // pageColor 
         <section id='Intro' className='bg-pageColor flex flex-row text-whiteText flex-wrap'>
 
 
             {/* Left div: Holds information */}
             <div className='flex flex-col w-1/2 font-ubuntu font-bold 
-                        text-center justify-center pb-20 pl-8'>
+                         justify-center pb-20 pl-8 sm:text-left md:text-center'>
 
                 <h1 className='italic text-8xl'>{NAME}</h1>
                 <h2 className='text-4xl'>{ROLE}</h2>
