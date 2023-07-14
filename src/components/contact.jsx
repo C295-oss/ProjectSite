@@ -35,9 +35,10 @@ const Contact = () => {
 
             <section className='flex flex-wrap h-max w-screen pb-8'>
 
-                <div className='px-8 h-screen sm:w-screen md:w-1/2 align-middle justify-center'>
+                <div className='px-4 sm:px-6 md:px-8 items-center 
+                    sm:w-screen md:w-1/2 align-middle justify-between'>
 
-                    <h1 className='text-textSelectColor font-bold text-8xl mb-24'>
+                    <h1 className='text-textSelectColor font-bold text-8xl mb-16'>
                         Contact
                     </h1>
 
@@ -58,9 +59,7 @@ const Contact = () => {
                 </div>
 
                 {/* Send an email to me! */}
-                {/* <div className=' justify-center align-middle sm:w-screen md:w-1/2 text-center flex flex-col'> */}
-                {/* <div className=' justify-center align-middle sm:w-screen md:w-1/2 text-center flex flex-col'> */}
-                <div className='px-8 h-screen sm:w-screen md:w-1/2 align-middle justify-center'>
+                <div className='px-4 sm:px-6 md:px-8 h-screen sm:w-screen w-full md:w-1/2 align-middle justify-center'>
 
 
                     <form
@@ -68,7 +67,7 @@ const Contact = () => {
                         method="POST"
                     >
 
-                        <h1 className='text-6xl text-textSelectColor'>
+                        <h1 className=' text-6xl text-textSelectColor'>
                             Email
                         </h1>
 

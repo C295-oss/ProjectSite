@@ -9,7 +9,7 @@ const About = () => {
 
     const DisplayText = ({text}) => {
         return(
-            <h3 className={' py-4 text-textSelectColor font-kanit font-bold text-2xl'}>
+            <h3 className={' py-4 text-textSelectColor font-kanit font-bold text-xl md:text-2xl'}>
                 {text}
             </h3>
         );
